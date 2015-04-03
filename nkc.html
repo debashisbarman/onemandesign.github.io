@@ -33,7 +33,14 @@ p a, p a:visited { line-height: inherit; }
 .main span { padding-bottom: 6px; border-bottom: 2px solid #4c6672; }
 .main p { margin: 13px 0; }
 
-.links { height: 233px; margin: 0 auto 0 auto; color: #fff; background-color: #4c6672; }
+.links { height: auto; margin: 0 auto 0 auto;color: #fff; background-color: #4c6672; }
+.links-inner { padding:  21px 0 0 0; } 
+.links h3 { font-size: 16px; text-transform: uppercase; font-weight: 500; }
+.links li { line-height: 1.618; font-size: 14px; }
+.links a, .links a:visited { color: #fff; font-weight: 500; text-decoration: none; outline: 0; }
+.links a:hover, .links a:focus { color: #fff; border-bottom: 1px solid #fff; }
+.links p a, .links p a:visited { line-height: inherit; }
+
 
 .events {  }
 .events .left { width: 25%; padding: 13px 0; float: left; }
@@ -58,30 +65,30 @@ footer p { font-size: 13px; }
 <nav class="navbar clearfix" id="navbar-toggle">
 <div class="navbar-container">
 
-	<ul class="navbar-list clearfix">
-	<li class="navbar-item navbar-header visible-lg"><a href="">North Kamrup College</a></li>
-	<li class="navbar-item navbar-header hidden-lg"><a href=""><span class="fa fa-fw fa-home"></span></a></li>
+<ul class="navbar-list clearfix">
+<li class="navbar-item navbar-header visible-lg"><a href="">North Kamrup College</a></li>
+<li class="navbar-item navbar-header hidden-lg"><a href=""><span class="fa fa-fw fa-home"></span></a></li>
 
-	<div class="sr-only">
-	<li class="open-menu"><a href="#navbar-toggle"><span class="fa fa-fw fa-navicon"></span></a></li>
-	<li class="close-menu"><a href="#"><span class="fa fa-fw fa-close"></span></a></li>
-	</div>
-	
-	<div class="navbar-toggle pull-right">
-	
-	<li class="navbar-item"><a href="#getting-started"><span class="fa fa-fw fa-building-o"></span> About College</a></li>
-	
-	<li class="navbar-item visible-md"><a href="components/"><span class="fa fa-fw fa-graduation-cap"></span> Academics</a></li>
-	
-	<li class="navbar-item hidden-md"><a href="components/"><span class="fa fa-fw fa-graduation-cap"></span> Faculty & Academics</a></li>
-	
-	<li class="navbar-item"><a href="#examples"><span class="fa fa-fw fa-legal"></span> Management</a></li>
+<div class="sr-only">
+<li class="open-menu"><a href="#navbar-toggle"><span class="fa fa-fw fa-navicon"></span></a></li>
+<li class="close-menu"><a href="#"><span class="fa fa-fw fa-close"></span></a></li>
+</div>
 
-	<li class="navbar-item"><a href="https://github.com/debashisbarman/Kathamo" target="_blank"><span class="fa fa-fw fa-folder-open-o"></span> Office & Services</a></li>
+<div class="navbar-toggle pull-right">
 
-	</div>
+<li class="navbar-item"><a href="#getting-started"><span class="fa fa-fw fa-building-o"></span> About College</a></li>
 
-	</ul>
+<li class="navbar-item visible-md"><a href="components/"><span class="fa fa-fw fa-graduation-cap"></span> Academics</a></li>
+
+<li class="navbar-item hidden-md"><a href="components/"><span class="fa fa-fw fa-graduation-cap"></span> Faculty & Academics</a></li>
+
+<li class="navbar-item"><a href="#examples"><span class="fa fa-fw fa-legal"></span> Management</a></li>
+
+<li class="navbar-item"><a href="https://github.com/debashisbarman/Kathamo" target="_blank"><span class="fa fa-fw fa-folder-open-o"></span> Office & Services</a></li>
+
+</div>
+
+</ul>
 
 </div>
 </nav>
@@ -171,24 +178,74 @@ footer p { font-size: 13px; }
 
 <!-- Links -->
 <div class="container links clearfix">
-<div class="row">
-<div class="col-lg-2 col-md-2 col-sm-12">
-
+<div class="row clearfix">
+<div class="links-inner clearfix">
+<div class="col-lg-2 col-md-4 col-sm-12 clearfi">
+<ul>
+<li><h3>Departments</h3></li>
+<li><a href="Assamese.htm">Assamese</a></li>
+<li><a href="English.htm">English</a></li>
+<li><a href="Eco.htm">Economics</a></li>
+<li><a href="Pol.htm">Political Science</a></li>
+<li><a href="History.htm">History</a></li>
+<li><a href="Edu.htm">Education</a></li>
+<li><a href="Phil.htm">Philosophy</a></li>
+<li><a href="Bodo.htm">Bodo</a></li>
+</ul>
 </div>
-<div class="col-lg-2 col-md-2 col-sm-12">
-
+<div class="col-lg-2 col-md-4 col-sm-12">
+<ul>
+<li><h3>Academics</h3></li>
+<li><a href="">Principal</a></li>
+<li><a href="">Faculties</a></li>
+<li><a href="">Non Teaching Staff</a></li>
+<li><a href="">Institutional Accreditation</a></li>
+<li><a href="">Academic Regulation</a></li>
+<li><a href="">Academic Calendar</a></li>
+<li><a href="">Fee Structure</a></li>
+</ul>
 </div>
-<div class="col-lg-2 col-md-2 col-sm-12">
-
+<div class="col-lg-2 col-md-4 col-sm-12">
+<ul>
+<li><h3>Management</h3></li>
+<li><a href="admin.htm">Administration</a></li>
+<li><a href="gb.htm">Governing Body</a></li>
+<li><a href="present.htm">Present Governing Body</a></li>
+<li><a href="comm.htm">College Committees</a></li>
+</ul>
 </div>
-<div class="col-lg-2 col-md-2 col-sm-12">
-
+<div class="col-lg-2 col-md-4 col-sm-12">
+<ul>
+<li><h3>Courses</h3></li>
+<li><a href="">Higher Secondary</a></li>
+<li><a href="">Three Years Degree</a></li>
+<li><h3>Facilities</h3></li>
+<li><a href="">Campus</a></li>
+<li><a href="">Library</a></li>
+<li><a href="">Girls' Hostel</a></li>
+<li><a href="">Study Center</a></li>
+</ul>
 </div>
-<div class="col-lg-2 col-md-2 col-sm-12">
-
+<div class="col-lg-2 col-md-4 col-sm-12">
+<ul>
+<li><h3>Quick Links</h3></li>
+<li><a href="">Scholarship</a></li>
+<li><a href="">National Services Scheme</a></li>
+<li><a href="">Conveyance Allowance</a></li>
+<li><a href="">Information and Career Guidance Cell</a></li>
+<li><a href="">Career Oriented Courses</a></li>
+</ul>
 </div>
-<div class="col-lg-2 col-md-2 col-sm-12">
-
+<div class="col-lg-2 col-md-4 col-sm-12">
+<ul>
+<li><h3>Contact</h3></li>
+<li>North Kamrup College</li>
+<li>Baghmara</li>
+<li>Barpeta, Assam</li>
+<li><span class="fa fa-phone"></span> 03666-268783</li>
+<li><span class="fa fa-paper-plane"></span> Send Mail</li>
+</ul>
+</div>
 </div>
 </div>
 </div>
@@ -196,8 +253,8 @@ footer p { font-size: 13px; }
 
 <!-- Footer -->
 <footer class="container clearfix text-center">
-<p><strong>Copyright</strong> &copy; 2015 North Kamrup College. All rights reserved worldwide.<a href="">Sitemap</a></p>
-<p>This website was last updated on 26<sup>th</sup> January, 2015.</p>
+<p><strong>Copyright</strong> &copy; 2015 North Kamrup College. All rights reserved worldwide. <a href="">Sitemap</a></p>
+<p>This website was last updated on 3<sup>rd</sup> April, 2015. Website by <a href="">One Man Design</a>.</p>
 </footer>
 <!-- Footer -->
 
