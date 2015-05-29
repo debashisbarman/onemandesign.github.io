@@ -12,16 +12,19 @@
 
 <style>
 
-body { padding-bottom: 8%; }
-
 .sidebar-left { left: -166px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; position: absolute; top: 99px; transform: matrix( 0, -1, 1, 0, 0, 0 ); }
 .sidebar-right { color: #777; font-size: 11px; font-weight: 300; right: -144px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; position: absolute; top: 233px; transform: matrix( 0, -1, 1, 0, 0, 0 ); }
 
 .divider { clear: both; height: 2px; margin: 5% auto; width: 233px; background: #eaeaea; }
 
-header { padding: 5% 0 0 0; }
+header { margin: 2% 2% 0 2%; padding: 5% 0 0 0; border: 5px solid #eaeaea; border-bottom: none; }
 
-.contact { padding: 34px 0 0 0; background: #eaeaea; }
+.about, .philosophy { margin: 0 2%; border-left: 5px solid #eaeaea; border-right: 5px solid #eaeaea; }
+
+.contact { background: #f3f5f6; }
+.contact-inner { padding: 34px 0 0 0; margin: 0 2%; border-left: 5px solid #eaeaea; border-right: 5px solid #eaeaea; }
+
+footer { margin: 0 2% 2% 2%; padding: 55px 0; border: 5px solid #eaeaea; border-top: none; }
 
 /* Typography
 ================================================== */
@@ -60,23 +63,25 @@ blockquote:before { font-size: 55px; margin-top: -21px; margin-left: -25px; }
 </style>
 
 <body class="clearfix">
-<div class="container clearfix">
 
 <header class="clearfix">
+<div class="container clearfix">
 <div class="row clearfix">
 <div class="col-lg-9 col-md-10 col-sm-12">
 <h1>Hello, world !<br>
 We're One Man Design,<br>
-a Creative Studio based in India</h1>
+Creative Studio based in India.</h1>
 <blockquote><p>Simplicity is the ultimate sophistication.
 <cite>Leonardo da Vinci, Polymath</cite>
 </p></blockquote>
+</div>
 </div>
 </div>
 </header>
 
 
 <article class="about clearfix">
+<div class="container clearfix">
 <div class="row clearfix">
 <div class="col-lg-8 col-md-10 col-sm-12">
 <p><img src="assets/db.in.png">
@@ -84,6 +89,9 @@ a Creative Studio based in India</h1>
 </p>
 <p>We are a creative design studio run by young entrepreneurs to create clean and inituitive digital experiences that tell stories, build brand and bring ideas to life.</p>
 </div>
+
+<div class="divider"></div>
+
 <div class="col-lg-8 col-md-10 col-sm-12">
 <h2>Our Work</h2>
 </div>
@@ -100,9 +108,9 @@ a Creative Studio based in India</h1>
 <img src="assets/db.in.png">
 </div>
 </div>
+</div>
 </article>
 
-</div>
 
 <article class="philosophy clearfix">
 <div class="container clearfix">
@@ -122,6 +130,7 @@ a Creative Studio based in India</h1>
 </article>
 
 <article class="contact clearfix">
+<div class="contact-inner clearfix">
 <div class="container clearfix">
 <div class="row clearfix">
 <div class="col-lg-8 col-md-8 col-sm-12">
@@ -130,7 +139,10 @@ a Creative Studio based in India</h1>
 </div>
 </div>
 </div>
+</div>
 </article>
+
+<footer></footer>
 
 </body>
 
