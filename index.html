@@ -12,128 +12,113 @@
 
 <style>
 
-.sidebar-left { left: -166px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; position: absolute; top: 99px; transform: matrix( 0, -1, 1, 0, 0, 0 ); }
-.sidebar-right { color: #777; font-size: 11px; font-weight: 300; right: -144px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px; position: absolute; top: 233px; transform: matrix( 0, -1, 1, 0, 0, 0 ); }
+header { padding: 2% 2% 0 2%; color: #ffffff; background: linear-gradient(rgba(36, 40, 37, 0.70), rgba(36, 40, 37, 0.90)), url(assets/bg.jpg); background-size: cover; background-position: center center; text-transform: uppercase; }
+.header-inner { padding: 8% 0 3% 0; border: 3px solid rgba(102, 107, 105, 0.3); border-bottom: none; }
 
-.divider { clear: both; height: 2px; margin: 5% auto; width: 233px; background: #eaeaea; }
+h1, h2, h3 { font-weight: 500; line-height: 1.618; letter-spacing: normal; }
+p { line-height: 2; padding-bottom: 5%; }
 
-header { margin: 2% 2% 0 2%; padding: 5% 0 0 0; border: 5px solid #eaeaea; border-bottom: none; }
-
-.about, .philosophy { margin: 0 2%; border-left: 5px solid #eaeaea; border-right: 5px solid #eaeaea; }
-
-.contact { background: #f3f5f6; }
-.contact-inner { padding: 34px 0 0 0; margin: 0 2%; border-left: 5px solid #eaeaea; border-right: 5px solid #eaeaea; }
-
-footer { margin: 0 2% 2% 2%; padding: 34px 0 0 0; border: 5px solid #eaeaea; border-top: none; }
-
-/* Typography
-================================================== */
-p { margin-bottom: 34px; }
-
-h1 { font-weight: 500; line-height: 1.618; letter-spacing: normal; text-transform: uppercase; }
-
-h2, h3 { font-weight: 500; }
-
-p, li, li p { font-size: 15px; line-height: 2; font-weight :300; }
-
-a, a:visited { color: #555; padding-bottom: 2px; border-bottom: 1px solid #ccc; text-decoration: none; font-weight: normal; }
-a:hover, a:focus { color: #101010; border-bottom: 1px solid #101010; transition: border-bottom-color 0.89s ease, color 0.89s ease; -webkit-transition: border-bottom-color 0.89s ease, color 0.89s ease; -o-transition: border-bottom-color 0.89s ease, color 0.89s ease; }
-p a, p a:visited { line-height: inherit; }
-
-h2 a, h2 a:visited { color: #c0c0c0; border-bottom: none; font-weight: normal; }
-h2 a:hover, h2 a:focus { color: #555; border-bottom: none; transition : color 0.89s ease; -webkit-transition : color 0.89s ease; -moz-transition : color 0.89s ease; -o-transition : color 0.89s ease; }
-
-footer p a, footer p a:visited, footer p a:hover, footer p a:focus { color #f3f5f6; border-bottom-color: #f3f5f6; }
-
-header p u { padding-bottom: 2px; line-height: 1.618; border-bottom-color: #fff; }
-.article-body p { margin-bottom: 34px; }
-
-blockquote { border-left: none; font-family: "Georgia", sans; font-size: 16px; line-height: 1; margin: 0; padding: 0 0 34px 0; quotes: "\201C""\201D""\2018""2019"; }
-
-blockquote:before { color: #eaeaea; font-size: 34px; margin-left: -17px; font-style: italic; font-weight: bold; content: open-quote; } 
-
-blockquote p { display: inline; font-size: 16px; font-style: italic; font-weight: bold; }
+.highlight { padding-bottom: 5px; border-bottom: 1px dotted #ccc; }
 
 @media (min-width: 768px) {
-p, li, li p { font-size: 21px; line-height: 2; }
-blockquote p { font-size: 25px; }
-blockquote:before { font-size: 55px; margin-top: -21px; margin-left: -25px; }
+body { text-align: ; }
+h1 { font-size: 54px; }
+h2 { font-size: 34px; }
+p { font-size: 18px; }
+p.lead { font-size: 21px; }
 }
+
+section.profile { padding: 0 2%; }
+.profile-inner { padding: 5% 0 0 0; border-left: 3px solid rgba(102, 107, 105, 0.3); border-right: 3px solid rgba(102, 107, 105, 0.3); }
+
+section.portfolio { padding: 0 2%; background: #F8F8F8; }
+.portfolio-inner { padding: 5% 0 0 0; border-left: 3px solid rgba(102, 107, 105, 0.3); border-right: 3px solid rgba(102, 107, 105, 0.3); }
+@media (max-width: 768px) {
+section.portfolio { border: none; }
+}
+
+ul.portfolio li { width: 47.5%; padding: 0 2.5% 0 0; float: left; }
+@media (max-width: 768px) {
+ul.portfolio li { width: 96%; padding: 0 4% 0 0; clear: both; }
+}
+ul.portfolio li img { cursor: url('assets/cursor.png'), default; }
+
+article.contact { padding: 0 2%; }
+.contact-inner { padding: 5% 0 0 0; border-left: 3px solid rgba(102, 107, 105, 0.3); border-right: 3px solid rgba(102, 107, 105, 0.3); }
+
+a, a:visited { color: #555; padding-bottom: 2px; border-bottom: 2px solid #ccc; text-decoration: none; font-weight: normal; }
+a:hover, a:focus { color: #101010; border-bottom: 2px solid #101010; transition: border-bottom-color 0.89s ease, color 0.89s ease; -webkit-transition: border-bottom-color 0.89s ease, color 0.89s ease; -o-transition: border-bottom-color 0.89s ease, color 0.89s ease; }
+p a, p a:visited { line-height: inherit; }
+
+a.portfolio, a.portfolio:visited, a.portfolio:focus, a.portfolio:hover { border: none; }
+
+footer { padding: 0 2% 2% 2%; color: #ffffff; background: linear-gradient(rgba(36, 40, 37, 0.95), rgba(36, 40, 37, 0.95)); background-size: cover; }
+.footer-inner { padding: 3% 0 0 0; border: 3px solid rgba(102, 107, 105, 0.3); border-top: none; }
 
 </style>
 
 <body class="clearfix">
 
+<!-- Header starts -->
 <header class="clearfix">
+<div class="header-inner clearfix">
 <div class="container clearfix">
 <div class="row clearfix">
-<div class="col-lg-9 col-md-10 col-sm-12">
+<div class="col-lg-12 col-md-12 col-sm-12 clearfix">
 <h1>Hello, world !<br>
 We're One Man Design,<br>
 Creative Studio based in India.</h1>
-<blockquote><p>Simplicity is the ultimate sophistication.
-<cite>Leonardo da Vinci, Polymath</cite>
-</p></blockquote>
+<p><span class="highlight">Hire us.</span> Or get to know us first.</p>
+</div>
 </div>
 </div>
 </div>
 </header>
+<!-- Header ends -->
 
-
-<article class="about clearfix">
+<!-- Profile starts -->
+<section class="profile clearfix">
+<div class="profile-inner clearfix">
 <div class="container clearfix">
 <div class="row clearfix">
-<div class="col-lg-8 col-md-10 col-sm-12">
-<p><img src="assets/db.in.png">
-<span class="sidebar-right visible-lg">One Man Design is a Creative Studio based in India.</span>
-</p>
-<p>We are a creative design studio run by young entrepreneurs to create clean and inituitive digital experiences that tell stories, build brand and bring ideas to life.</p>
+<div class="col-lg-10 col-md-10 col-sm-12 clearfix">
+<p class="lead">We are <span class="highlight" title="One Man Design">One Man Design</span>, a creative studio run by young technology loving entrepreneurs to create clean and inituitive digital experiences that tell stories, build brand and bring ideas to life.</p>
 </div>
+</div>
+</div>
+</div>
+</section>
+<!-- Profile ends -->
 
-<div class="divider"></div>
-
-<div class="col-lg-8 col-md-10 col-sm-12">
-<h2>Our Work</h2>
-</div>
-<div class="col-lg-6 col-md-8 col-sm-12 clearfix">
-<p>We specialize in visual design, web design, user experience design, and illustration. Our passion is helping local business owners expand their clientele reach by creating an engaging and memorable web presence.</p>
-</div>
-<div class="col-lg-6 col-md-10 col-sm-12">
-<img src="assets/db.in.png">
-</div>
-<div class="col-lg-6 col-md-10 col-sm-12">
-<img src="assets/db.in.png">
-</div>
-<div class="col-lg-6 col-md-10 col-sm-12">
-<img src="assets/db.in.png">
-</div>
-</div>
-</div>
-</article>
-
-
-<article class="philosophy clearfix">
+<!-- Portfolio starts -->
+<section class="portfolio clearfix">
+<div class="portfolio-inner clearfix">
 <div class="container clearfix">
 <div class="row clearfix">
-<div class="col-lg-offset-1 col-lg-7 col-md-8 col-sm-12">
-<h2 class="sidebar-left visible-lg">Our Services</h2>
-<h2 class="hidden-lg">Our Services</h2>
-<p>We take pride in the work we do and we do it with extra care. We love using products that demonstrate attention to detail and high levels of craftsmanship. These are the services that we offer. </p>
-<ul class="li-circle">
-<li>Responsive Web Design</li>
-<li>Mobile Development</li>
-<li>Print / Branding</li>
+<div class="col-lg-12 col-md-12 col-sm-12 clearfix">
+<p>We specialize in responsive web design, mobile development and branding. Our passion is helping local business owners expand their clientele reach by creating an engaging and memorable web presence.</p>
+<ul class="li-unstyled clearfix portfolio">
+<li><a class="portfolio" href="" target="_blank"><img class="img-responsive img-border" src="assets/sb.in.png"></a></li>
+<li><a class="portfolio" href="" target="_blank"><img class="img-responsive img-border" src="assets/sb.in.png"></a></li>
+<li><a class="portfolio" href="" target="_blank"><img class="img-responsive img-border" src="assets/sb.in.png"></a></li>
+<li><a class="portfolio" href="" target="_blank"><img class="img-responsive img-border" src="assets/sb.in.png"></a></li>
+<li><a class="portfolio" href="" target="_blank"><img class="img-responsive img-border" src="assets/sb.in.png"></a></li>
+<li><a class="portfolio" href="" target="_blank"><img class="img-responsive img-border" src="assets/sb.in.png"></a></li>
 </ul>
+<p>( More creations are on the way... )</p>
 </div>
 </div>
 </div>
-</article>
+</div>
+</section>
+<!-- Portfolio ends -->
 
+<!-- Contact starts -->
 <article class="contact clearfix">
 <div class="contact-inner clearfix">
 <div class="container clearfix">
 <div class="row clearfix">
-<div class="col-lg-8 col-md-8 col-sm-12">
+<div class="col-lg-12 col-md-12 col-sm-12 clearfix">
 <h2>Want to work together ? Let's <a href="mailto:deb.dbuniversity@gmail.com">talk.</a></h2>
 <p>Currently we are available for new engagements.</p>
 </div>
@@ -141,16 +126,24 @@ Creative Studio based in India.</h1>
 </div>
 </div>
 </article>
+<!-- Contact ends -->
 
+<!-- Footer starts -->
 <footer class="clearfix">
+<div class="footer-inner clearfix">
 <div class="container clearfix">
 <div class="row clearfix">
-<div class="col-lg-8 col-md-8 col-sm-12">
+<div class="col-lg-6 col-md-6 col-sm-12 clearfix">
 <p>&copy; 2015 One Man Design.</p>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-12 hidden-sm text-right clearfix">
+<p>Built with Kathamo 2.0.0.</p>
+</div>
 </div>
 </div>
 </div>
 </footer>
+<!-- Footer ends -->
 
 </body>
 
